@@ -1,0 +1,152 @@
+body{
+    background-image: linear-gradient(#101010, #101010);
+	margin: 0;
+	padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    color: white;
+    -webkit-animation: fadein 3s;
+       -moz-animation: fadein 3s;
+        -ms-animation: fadein 3s;
+         -o-animation: fadein 3s;
+            animation: fadein 3s;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+.topnav{
+    width: 90%;
+    margin: 50px auto;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.topnav a{
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    font-size: medium;
+    margin: auto 50px;
+}
+
+.topnav a.active{
+    font-weight: 400;
+    color: white;
+    cursor: default;
+}
+
+.section{
+    text-align: center;
+    margin-bottom: 150px;
+     position: absolute;
+    top: 29%;
+    right: 53%;
+
+}
+
+
+
+img {
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.dlbtn{
+    transition: background-color .5s;
+    background-color: #161616;
+    padding: 10 20;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    top : 80px;
+    right : 910px;
+}
+
+
+.dlbtn:hover{
+    background-color: #2B2B2B;
+}
+
+
+.footer{
+    background-color: rgba(22, 22, 22);
+    color: rgba(75, 75, 75);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 48.17px;
+    bottom: 0;
+    padding: 10px 0;
+        font-family: 'raleway', sans-serif;
+}
+
+.dlbtn{
+    transition: background-color .5s;
+    background-color: #161616;
+    padding: 10 20;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    top : 80px;
+    right : 910px;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}

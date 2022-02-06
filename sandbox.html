@@ -1,0 +1,40 @@
+<html>
+    <head>
+    </head>
+    <body>
+<iframe src="https://pelis2021.glitch.me/" sandbox="noallow-scripts">
+    <script>
+        //Paste the contents of the script(https://raw.githubusercontent.com/JamesMGreene/sandblaster/master/dist/sandblaster.js) here
+
+        var result = sandblaster.detect();
+        if(result.sandboxed === true) {
+            //sandboxed
+        }
+        debugger;
+    </script>
+  <script>
+  try {
+  result.sandboxed = frameEl.hasAttribute("sandbox");
+}
+catch (sandboxErr) {
+  result.sandboxed = null;
+  if (typeof errback === "function") {
+    errback(sandboxErr);
+  }
+}
+    
+  </script>
+  <script>
+  function isSandboxedIframe() {
+  if (window.parent === window) return 'no-iframe';
+  try { var f = window.frameElement; } catch(err) { f = null; }
+  if(f === null) {
+    if(document.domain !== '') return 'unkown'; // Probably 'non-sandboxed'
+    if(location.protocol !== 'data:') return 'sandboxed';
+    return 'unkown'; // Can be 'sandboxed' on Firefox
+  }
+  return f.hasAttribute('sandbox') ? 'sandboxed' : 'non-sandboxed';
+}
+  </script>
+    </body>
+</html>

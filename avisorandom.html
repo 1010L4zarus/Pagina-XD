@@ -1,0 +1,32 @@
+ <div class="alert-info linkify">
+   
+     <script>
+function getMensaje(){
+var aFrases=new Array();
+aFrases[0]="Recuerda que puedes apoyarme compartiendo la pagina con amigos";
+aFrases[1]="Quieres alguna pelicula? Lazarus#1909";
+aFrases[2]="Intentamos actualizar la pagina lo mas seguido posible";
+aFrases[3]="Toda la pagina esta echa con html";
+aFrases[3]="Recuerda que puedes encontrar mas peliculas en la *pagina 2*";
+aFrases[3]="Ya hay peliculas de 2020!";
+aFrases[3]="Se agrego mas seguirdad a la pagina";
+aFrases[3]="Ahora carga aun mas rapido";
+aFrases[3]="Puedes visitar la pagina de google aqui: https://sites.google.com/view/lss-web/p%C3%A1gina-principal";
+return(aFrases[Math.floor(Math.random() * aFrases.length)]);
+}
+</script>
+   <script>document.write(getMensaje());</script>
+  </div>
+
+ <style>
+  .alert-info {
+    background-color: #f68802;
+    border: 0;
+    margin: 0;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.4em;
+    padding: 12px 0;
+}
+</style>
